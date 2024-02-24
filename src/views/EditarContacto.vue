@@ -47,7 +47,6 @@
             .from('contactos')
             .update({ nombre: nombre.value, email: email.value, telefono: telefono.value })
             .eq('id', id);
-        console.log(error);
         //Redireccionamos al listado de contactos
         router.push({path: "/"});
     }

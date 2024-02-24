@@ -23,7 +23,6 @@
     async function obtenerContactos() {
         const { data, error } = await supabase.from('contactos').select('*');
         if (!error) {
-            console.log(contactos);
             contactos.value = data;
         }
     }
